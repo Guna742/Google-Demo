@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - Auralis Suite</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/typography.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+</head>
+
+<body>
+
+    <div id="header-placeholder"></div>
+
+    <main>
+
+        <!-- Pricing Header -->
+        <section class="pricing-hero text-center" style="padding-bottom: 40px;">
+            <div class="container fade-in">
+                <h1 class="hero-headline">Simple pricing for every stage.</h1>
+                <p class="mb-5" style="max-width: 600px; margin: 0 auto 32px;">
+                    Start free, upgrade as you grow. No hidden fees.
+                </p>
+
+                <!-- Toggle -->
+                <div class="pricing-toggle-container flex items-center justify-center gap-sm">
+                    <span class="toggle-label active" id="monthly-label">Monthly</span>
+                    <label class="switch">
+                        <input type="checkbox" id="pricing-toggle">
+                        <span class="slider round"></span>
+                    </label>
+                    <span class="toggle-label" id="yearly-label">Yearly <span class="badge"
+                            style="background:var(--green-accent); color:white; border:none; margin-left:4px;">-20%</span></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Cards -->
+        <section class="pricing-cards-section">
+            <div class="container">
+                <div class="grid grid-3">
+
+                    <!-- Free -->
+                    <div class="card pricing-card fade-in delay-1">
+                        <h3 class="card-title">Starter</h3>
+                        <p class="card-desc">For individuals and hobbyists.</p>
+                        <div class="price-container">
+                            <span class="currency">$</span>
+                            <span class="price-value" data-monthly="0" data-yearly="0">0</span>
+                            <span class="period">/mo</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary w-100">Get Started</a>
+                        <ul class="feature-list">
+                            <li>1 User</li>
+                            <li>Basic Analytics</li>
+                            <li>Community Support</li>
+                        </ul>
+                    </div>
+
+                    <!-- Pro -->
+                    <div class="card pricing-card highlight fade-in delay-2">
+                        <div class="popular-tag">Most Popular</div>
+                        <h3 class="card-title">Pro</h3>
+                        <p class="card-desc">For growing teams.</p>
+                        <div class="price-container">
+                            <span class="currency">$</span>
+                            <span class="price-value" data-monthly="29" data-yearly="24">29</span>
+                            <span class="period">/mo</span>
+                        </div>
+                        <a href="#" class="btn btn-primary w-100">Start Free Trial</a>
+                        <ul class="feature-list">
+                            <li>Up to 5 Users</li>
+                            <li>Advanced Reporting</li>
+                            <li>Priority Support</li>
+                            <li>Data Export</li>
+                        </ul>
+                    </div>
+
+                    <!-- Enterprise -->
+                    <div class="card pricing-card fade-in delay-3">
+                        <h3 class="card-title">Enterprise</h3>
+                        <p class="card-desc">For scale and security.</p>
+                        <div class="price-container">
+                            <span class="currency">$</span>
+                            <span class="price-value" data-monthly="99" data-yearly="79">99</span>
+                            <span class="period">/mo</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary w-100">Contact Sales</a>
+                        <ul class="feature-list">
+                            <li>Unlimited Users</li>
+                            <li>Custom Integrations</li>
+                            <li>Dedicated Manager</li>
+                            <li>SLA Guarantee</li>
+                            <li>SSO & Audit Logs</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparison Matrix -->
+        <section class="comparison-section">
+            <div class="container">
+                <h2 class="text-center mb-5">Compare Plans</h2>
+                <div class="table-container">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th class="feature-col">Feature</th>
+                                <th>Starter</th>
+                                <th>Pro</th>
+                                <th>Enterprise</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="feature-col">Users</td>
+                                <td>1</td>
+                                <td>Up to 5</td>
+                                <td>Unlimited</td>
+                            </tr>
+                            <tr>
+                                <td class="feature-col">Storage</td>
+                                <td>5 GB</td>
+                                <td>50 GB</td>
+                                <td>Unlimited</td>
+                            </tr>
+                            <tr>
+                                <td class="feature-col">Support</td>
+                                <td>Community</td>
+                                <td>Email (24h)</td>
+                                <td>24/7 Phone</td>
+                            </tr>
+                            <tr>
+                                <td class="feature-col">API Access</td>
+                                <td>-</td>
+                                <td>✓</td>
+                                <td>✓</td>
+                            </tr>
+                            <tr>
+                                <td class="feature-col">Custom Domain</td>
+                                <td>-</td>
+                                <td>✓</td>
+                                <td>✓</td>
+                            </tr>
+                            <tr>
+                                <td class="feature-col">Audit Logs</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>✓</td>
+                            </tr>
+                            <tr>
+                                <td class="feature-col">Data Retention</td>
+                                <td>30 Days</td>
+                                <td>1 Year</td>
+                                <td>Unlimited</td>
+                            </tr>
+                            <tr>
+                                <td class="feature-col">SLA</td>
+                                <td>-</td>
+                                <td>99.9%</td>
+                                <td>99.99%</td>
+                            </tr>
+                            <tr>
+                                <td class="feature-col">Dedicated Manager</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>✓</td>
+                            </tr>
+                            <tr>
+                                <td class="feature-col">SSO (SAML)</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>✓</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/animations.js"></script>
+
+    <script>
+        // Pricing Toggle Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggle = document.getElementById('pricing-toggle');
+            const prices = document.querySelectorAll('.price-value');
+            const monthlyLabel = document.getElementById('monthly-label');
+            const yearlyLabel = document.getElementById('yearly-label');
+
+            toggle.addEventListener('change', () => {
+                const isYearly = toggle.checked;
+
+                if (isYearly) {
+                    monthlyLabel.classList.remove('active');
+                    yearlyLabel.classList.add('active');
+                } else {
+                    monthlyLabel.classList.add('active');
+                    yearlyLabel.classList.remove('active');
+                }
+
+                prices.forEach(price => {
+                    // Simple animation effect
+                    price.style.opacity = 0;
+                    setTimeout(() => {
+                        price.textContent = isYearly ? price.dataset.yearly : price.dataset.monthly;
+                        price.style.opacity = 1;
+                    }, 200);
+                });
+            });
+        });
+    </script>
+
+    <style>
+        /* Feature List */
+        .feature-list {
+            list-style: none;
+            margin-top: 24px;
+            text-align: left;
+        }
+
+        .feature-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid var(--surface);
+        }
+
+        .w-100 {
+            width: 100%;
+        }
+
+        /* Pricing Card Highlight */
+        .pricing-card {
+            border-top: 4px solid transparent;
+        }
+
+        .pricing-card.highlight {
+            border-color: var(--primary-accent);
+            transform: scale(1.05);
+            /* Slight elevation */
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            z-index: 1;
+        }
+
+        .popular-tag {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: var(--primary-accent);
+            color: white;
+            font-size: 0.75rem;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        .price-container {
+            margin: 24px 0;
+        }
+
+        .price-value {
+            font-size: 3.5rem;
+            font-weight: 700;
+            transition: opacity 0.2s;
+        }
+
+        /* Toggle Switch */
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 50px;
+            height: 28px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 20px;
+            width: 20px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+        }
+
+        input:checked+.slider {
+            background-color: var(--primary-accent);
+        }
+
+        input:checked+.slider:before {
+            transform: translateX(22px);
+        }
+
+        .slider.round {
+            border-radius: 34px;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+
+        .toggle-label {
+            font-weight: 600;
+            color: var(--text-secondary);
+            cursor: pointer;
+        }
+
+        .toggle-label.active {
+            color: var(--text-primary);
+        }
+
+        /* Table */
+        .table-container {
+            overflow-x: auto;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 600px;
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            padding: 16px;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .comparison-table th {
+            font-weight: 600;
+            background: var(--surface);
+        }
+
+        .comparison-table .feature-col {
+            text-align: left;
+            font-weight: 500;
+            background: var(--background);
+            /* Sticky left col support if needed, simpler for now */
+        }
+
+        .mb-5 {
+            margin-bottom: 48px;
+        }
+    </style>
+</body>
+
+</html>

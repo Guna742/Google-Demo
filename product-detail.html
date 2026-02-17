@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auralis Analytics - Product Detail</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/typography.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+</head>
+
+<body>
+
+    <div id="header-placeholder"></div>
+
+    <main>
+        <!-- Immersive Hero -->
+        <section class="product-hero flex flex-col items-center justify-center text-center">
+            <div class="container fade-in">
+                <div class="badge mb-4">Auralis Analytics</div>
+                <h1 class="display-text slide-up">Data without the<br><span class="underline-anim">noise.</span></h1>
+                <p class="hero-subtext slide-up" style="animation-delay: 0.1s;">
+                    Turn complex data into clear, actionable insights.
+                    Real-time dashboards that everyone on your team can understand.
+                </p>
+                <div class="flex gap-sm justify-center slide-up" style="animation-delay: 0.2s;">
+                    <a href="#pricing" class="btn btn-primary">Start Free Trial</a>
+                    <a href="#features" class="btn btn-secondary">See Features</a>
+                </div>
+            </div>
+
+            <!-- Hero Image / Graphic -->
+            <div class="hero-graphic container mt-5 fade-in delay-3">
+                <div class="dashboard-mockup parallax" data-speed="0.1">
+                    <div class="mockup-header">
+                        <div class="mockup-dot red"></div>
+                        <div class="mockup-dot yellow"></div>
+                        <div class="mockup-dot green"></div>
+                    </div>
+                    <div class="mockup-body">
+                        <!-- CSS Grid Layout for Mockup -->
+                        <div class="chart-box large"></div>
+                        <div class="chart-box medium"></div>
+                        <div class="chart-box medium"></div>
+                        <div class="chart-box small"></div>
+                        <div class="chart-box small"></div>
+                        <div class="chart-box small"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Scroll Sequence -->
+        <section id="features" class="features-section">
+            <div class="container">
+
+                <!-- Feature 1 -->
+                <div class="feature-row grid items-center">
+                    <div class="feature-text fade-in">
+                        <div class="feature-icon text-highlight">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                            </svg>
+                        </div>
+                        <h2>Real-time Processing</h2>
+                        <p>Stop waiting for daily reports. See your data as it happens, with sub-second latency and
+                            instant visualization updates.</p>
+                    </div>
+                    <div class="feature-visual fade-in delay-1">
+                        <div class="visual-card gradient-card-1"></div>
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-row grid items-center reverse">
+                    <div class="feature-text fade-in">
+                        <div class="feature-icon text-highlight">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                        </div>
+                        <h2>Enterprise Security</h2>
+                        <p>Your data is encrypted at rest and in transit. SOC 2 Type II compliant with granular
+                            permission controls.</p>
+                    </div>
+                    <div class="feature-visual fade-in delay-1">
+                        <div class="visual-card gradient-card-2"></div>
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-row grid items-center">
+                    <div class="feature-text fade-in">
+                        <div class="feature-icon text-highlight">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <h2>Collaborative Dashboards</h2>
+                        <p>Share insights with a link. Comment on charts, tag team members, and make decisions together.
+                        </p>
+                    </div>
+                    <div class="feature-visual fade-in delay-1">
+                        <div class="visual-card gradient-card-3"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Screenshot Gallery -->
+        <section class="gallery-section">
+            <div class="container mb-5">
+                <h2 class="text-center">Interface Preview</h2>
+            </div>
+            <div class="gallery-scroll snap-inline">
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">Dashboard Overview</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">Report Builder</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">Team Settings</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">Mobile View</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Placeholder (Detailed pricing on pricing.html) -->
+        <section id="pricing" class="pricing-preview-section text-center">
+            <div class="container fade-in">
+                <h2 class="mb-4">Simple, transparent pricing.</h2>
+                <div class="pricing-card-preview card">
+                    <div class="pricing-header">
+                        <h3>Pro</h3>
+                        <div class="price">$29<span class="period">/mo</span></div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Unlimited Dashboards</li>
+                        <li>Real-time Data</li>
+                        <li>5 Team Members</li>
+                    </ul>
+                    <a href="pricing.html" class="btn btn-primary w-100">View all plans</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/animations.js"></script>
+
+    <style>
+        .product-hero {
+            padding-top: calc(var(--header-height) + 40px);
+            background: linear-gradient(180deg, rgba(66, 133, 244, 0.03) 0%, transparent 100%);
+        }
+
+        .underline-anim {
+            position: relative;
+            display: inline-block;
+        }
+
+        .underline-anim::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 4px;
+            width: 100%;
+            height: 6px;
+            background-color: var(--yellow-accent);
+            opacity: 0.6;
+            z-index: -1;
+            transform: scaleX(0);
+            transform-origin: left;
+            animation: expandLine 0.8s 0.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+        }
+
+        @keyframes expandLine {
+            to {
+                transform: scaleX(1);
+            }
+        }
+
+        .dashboard-mockup {
+            width: 100%;
+            max-width: 1000px;
+            height: 500px;
+            background: var(--background);
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .mockup-header {
+            height: 40px;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            padding: 0 16px;
+            gap: 8px;
+            background: var(--surface);
+        }
+
+        .mockup-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+
+        .mockup-dot.red {
+            background: #ff5f56;
+        }
+
+        .mockup-dot.yellow {
+            background: #ffbd2e;
+        }
+
+        .mockup-dot.green {
+            background: #27c93f;
+        }
+
+        .mockup-body {
+            padding: 24px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 16px;
+            height: 100%;
+            background: var(--surface);
+        }
+
+        .chart-box {
+            background: white;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .chart-box.large {
+            grid-column: span 2;
+            grid-row: span 2;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.4) 100%);
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .chart-box.large::after {
+            content: '';
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            height: 100px;
+            background: linear-gradient(0deg, rgba(66, 133, 244, 0.1) 0%, transparent 100%);
+            border-bottom: 2px solid var(--primary-accent);
+            border-radius: 0 0 8px 8px;
+        }
+
+        /* Add a fake line chart line */
+        .chart-box.large::before {
+            content: '';
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            height: 60px;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 500 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 80 C 100 80, 150 20, 250 50 S 400 0, 500 40' stroke='%234285F4' stroke-width='3' fill='none'/%3E%3C/svg%3E");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .chart-box.medium {
+            grid-column: span 1;
+            grid-row: span 1;
+            background: white;
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .chart-box.medium::after {
+            content: '';
+            width: 60%;
+            height: 8px;
+            background: var(--surface);
+            border-radius: 4px;
+        }
+
+        .chart-box.medium::before {
+            content: '';
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 4px solid var(--green-accent);
+            border-right-color: transparent;
+            transform: rotate(45deg);
+        }
+
+        .chart-box.small {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+
+        /* Feature Rows */
+        .feature-row {
+            grid-template-columns: 1fr;
+            gap: 40px;
+            margin-bottom: 120px;
+        }
+
+        @media (min-width: 768px) {
+            .feature-row {
+                grid-template-columns: 1fr 1fr;
+                gap: 80px;
+            }
+
+            .feature-row.reverse .feature-text {
+                order: 2;
+            }
+
+            .feature-row.reverse .feature-visual {
+                order: 1;
+            }
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+        }
+
+        .visual-card {
+            width: 100%;
+            height: 300px;
+            background: var(--surface);
+            border-radius: var(--border-radius);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        .gradient-card-1 {
+            background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+        }
+
+        .gradient-card-2 {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+
+        .gradient-card-3 {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+
+        /* Gallery */
+        .gallery-scroll {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            padding: 20px 5%;
+            /* Left/Right padding to see edge items */
+            gap: 32px;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .gallery-scroll::-webkit-scrollbar {
+            display: none;
+            /* Hide scrollbar for cleaner look */
+        }
+
+        .gallery-item {
+            flex: 0 0 80%;
+            /* Show 80% of width on mobile */
+            scroll-snap-align: center;
+            max-width: 800px;
+        }
+
+        @media (min-width: 768px) {
+            .gallery-item {
+                flex: 0 0 60%;
+            }
+        }
+
+        .gallery-placeholder {
+            width: 100%;
+            height: 400px;
+            background: var(--surface);
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        /* Pricing Preview */
+        .pricing-card-preview {
+            max-width: 350px;
+            margin: 0 auto;
+        }
+
+        .price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .period {
+            font-size: 1rem;
+            font-weight: 400;
+            color: var(--text-secondary);
+        }
+
+        .pricing-features {
+            text-align: left;
+            margin: 24px 0;
+            list-style: none;
+        }
+
+        .pricing-features li {
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 24px;
+        }
+
+        .pricing-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--green-accent);
+        }
+
+        .mt-5 {
+            margin-top: 48px;
+        }
+
+        .mb-4 {
+            margin-bottom: 24px;
+        }
+    </style>
+</body>
+
+</html>

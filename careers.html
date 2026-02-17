@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - Auralis Suite</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/typography.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+</head>
+
+<body>
+
+    <div id="header-placeholder"></div>
+
+    <main>
+
+        <!-- Careers Hero -->
+        <section class="careers-hero text-center">
+            <div class="container fade-in">
+                <div class="badge mb-4">Join Us</div>
+                <h1 class="hero-headline">Do the best work<br>of your life.</h1>
+                <p class="hero-subtext">
+                    We're looking for thinkers, builders, and dreamers who want to redefine how the world works.
+                </p>
+                <a href="#positions" class="btn btn-primary mt-5">View Open Roles</a>
+            </div>
+        </section>
+
+        <!-- Gallery / Culture -->
+        <section class="culture-section">
+            <div class="container">
+                <div class="culture-grid grid">
+                    <div class="culture-img large fade-in"></div>
+                    <div class="culture-img fade-in delay-1"></div>
+                    <div class="culture-img fade-in delay-2"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits -->
+        <section class="benefits-section bg-surface">
+            <div class="container">
+                <h2 class="text-center mb-5">Perks & Benefits</h2>
+                <div class="grid grid-3">
+                    <div class="benefit-item fade-in">
+                        <h3>Remote First</h3>
+                        <p>Work from anywhere. We care about output, not hours in a chair.</p>
+                    </div>
+                    <div class="benefit-item fade-in">
+                        <h3>Health & Wellness</h3>
+                        <p>Comprehensive coverage for you and your family.</p>
+                    </div>
+                    <div class="benefit-item fade-in">
+                        <h3>Unlimited PTO</h3>
+                        <p>Take the time you need to recharge and come back fresh.</p>
+                    </div>
+                    <div class="benefit-item fade-in">
+                        <h3>Home Office Stipend</h3>
+                        <p>$1000 to set up your dream workspace.</p>
+                    </div>
+                    <div class="benefit-item fade-in">
+                        <h3>Learning Budget</h3>
+                        <p>Generous allowance for courses, books, and conferences.</p>
+                    </div>
+                    <div class="benefit-item fade-in">
+                        <h3>Equity</h3>
+                        <p>Every employee is an owner. We share in our success.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Open Positions Accordion -->
+        <section id="positions" class="positions-section">
+            <div class="container">
+                <h2 class="text-center mb-5">Open Positions</h2>
+
+                <div class="accordion-group fade-in">
+
+                    <!-- Job 1 -->
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span class="job-title">Senior Product Designer</span>
+                            <span class="job-loc">Remote</span>
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>We are looking for a designer obsessed with clarity and minimal interfaces. You will lead
+                                the design system for our core suite.</p>
+                            <ul class="mb-4">
+                                <li>5+ years experience</li>
+                                <li>Strong portfolio of web apps</li>
+                                <li>Figma mastery</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary btn-sm">Apply Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Job 2 -->
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span class="job-title">Frontend Engineer</span>
+                            <span class="job-loc">London / Remote</span>
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Help us build the fastest dashboard in the world using vanilla JS and Web Components.</p>
+                            <ul class="mb-4">
+                                <li>Deep understanding of DOM</li>
+                                <li>Performance optimization skills</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary btn-sm">Apply Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Job 3 -->
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span class="job-title">Product Manager</span>
+                            <span class="job-loc">New York</span>
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Define the roadmap for Auralis Finance. Work closely with customers to solve real
+                                problems.</p>
+                            <a href="#" class="btn btn-primary btn-sm">Apply Now</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/animations.js"></script>
+
+    <script>
+        // Accordion Logic
+        document.querySelectorAll('.accordion-header').forEach(button => {
+            button.addEventListener('click', () => {
+                const accordionItem = button.parentElement;
+                const isActive = accordionItem.classList.contains('active');
+
+                // Close all others
+                document.querySelectorAll('.accordion-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+
+                // Toggle current
+                if (!isActive) {
+                    accordionItem.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+    <style>
+        .culture-grid {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 200px);
+            gap: 16px;
+        }
+
+        @media (min-width: 768px) {
+            .culture-grid {
+                grid-template-columns: 2fr 1fr;
+                grid-template-rows: 200px 200px;
+            }
+
+            .culture-img.large {
+                grid-row: span 2;
+            }
+        }
+
+        .culture-img {
+            background-color: #eee;
+            border-radius: var(--border-radius);
+            width: 100%;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .culture-img::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(45deg, rgba(66, 133, 244, 0.1), rgba(234, 67, 53, 0.1));
+            z-index: 1;
+        }
+
+        .culture-img.large {
+            background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .culture-img:nth-child(2) {
+            background-image: url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .culture-img:nth-child(3) {
+            background-image: url('https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .benefit-item {
+            padding: 24px;
+            background: white;
+            border-radius: var(--border-radius);
+            border: 1px solid var(--border-color);
+        }
+
+        .benefit-item h3 {
+            font-size: 1.25rem;
+            margin-bottom: 8px;
+        }
+
+        /* Accordion */
+        .accordion-group {
+            max-width: 800px;
+            margin: 0 auto;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .accordion-item {
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .accordion-header {
+            width: 100%;
+            padding: 24px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: none;
+            border: none;
+            cursor: pointer;
+            text-align: left;
+        }
+
+        .job-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            flex: 1;
+        }
+
+        .job-loc {
+            color: var(--text-secondary);
+            margin-right: 16px;
+            display: none;
+        }
+
+        @media (min-width: 600px) {
+            .job-loc {
+                display: block;
+            }
+        }
+
+        .accordion-icon {
+            font-size: 1.5rem;
+            transition: transform 0.3s;
+        }
+
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s cubic-bezier(0, 1, 0, 1);
+        }
+
+        .accordion-item.active .accordion-icon {
+            transform: rotate(45deg);
+        }
+
+        .accordion-item.active .accordion-content {
+            max-height: 500px;
+            /* arbitrary large value */
+            padding-bottom: 24px;
+        }
+
+        .btn-sm {
+            padding: 8px 20px;
+            font-size: 0.875rem;
+        }
+
+        .bg-surface {
+            background-color: var(--surface);
+        }
+
+        .mt-5 {
+            margin-top: 48px;
+        }
+    </style>
+</body>
+
+</html>

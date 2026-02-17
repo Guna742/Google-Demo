@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - Auralis Suite</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/typography.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+</head>
+
+<body>
+
+    <div id="header-placeholder"></div>
+
+    <main>
+
+        <!-- Resources Header -->
+        <section class="resources-header text-center">
+            <div class="container fade-in">
+                <h1 class="hero-headline">Ideas & Insights</h1>
+                <p class="hero-subtext">
+                    Strategies for better work, product updates, and customer stories.
+                </p>
+
+                <!-- Tags / Filter -->
+                <div class="filter-bar flex justify-center gap-sm mt-5 flex-wrap">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="blog">Blog</button>
+                    <button class="filter-btn" data-filter="case-study">Case Studies</button>
+                    <button class="filter-btn" data-filter="update">Product Updates</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Article -->
+        <section class="featured-section">
+            <div class="container">
+                <a href="#" class="featured-card card flex flex-col md:flex-row fade-in">
+                    <div class="featured-img"></div>
+                    <div class="featured-content">
+                        <div class="badge mb-3">Featured</div>
+                        <h2>The Future of Work is Modular</h2>
+                        <p>Why monolithic software suites are dying and how composable tools are taking over.</p>
+                        <span class="read-more">Read Article &rarr;</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Resource Grid -->
+        <section class="resource-grid-section">
+            <div class="container">
+                <div class="grid grid-3" id="resource-list">
+
+                    <!-- Item 1 -->
+                    <a href="#" class="card resource-card fade-in" data-category="blog">
+                        <div class="card-image"></div>
+                        <span class="text-small text-highlight uppercase">Blog</span>
+                        <h3>5 Ways to Reduce Meeting Fatigue</h3>
+                        <p>Recover 10 hours a week with these simple asynchronous workflows.</p>
+                    </a>
+
+                    <!-- Item 2 -->
+                    <a href="#" class="card resource-card fade-in" data-category="case-study">
+                        <div class="card-image"></div>
+                        <span class="text-small text-highlight uppercase">Case Study</span>
+                        <h3>How Acme Corp Scaled to 1M Users</h3>
+                        <p>A deep dive into the infrastructure challenges they faced and solved.</p>
+                    </a>
+
+                    <!-- Item 3 -->
+                    <a href="#" class="card resource-card fade-in" data-category="update">
+                        <div class="card-image"></div>
+                        <span class="text-small text-highlight uppercase">Update</span>
+                        <h3>Introducing Auralis Finance</h3>
+                        <p>Our biggest launch yet. Everything you need to manage your books.</p>
+                    </a>
+
+                    <!-- Item 4 -->
+                    <a href="#" class="card resource-card fade-in" data-category="blog">
+                        <div class="card-image"></div>
+                        <span class="text-small text-highlight uppercase">Blog</span>
+                        <h3>Design Systems for Non-Designers</h3>
+                        <p>A practical guide to keeping your product consistent.</p>
+                    </a>
+
+                    <!-- Item 5 -->
+                    <a href="#" class="card resource-card fade-in" data-category="case-study">
+                        <div class="card-image"></div>
+                        <span class="text-small text-highlight uppercase">Case Study</span>
+                        <h3>Streamlining HR for Remote Teams</h3>
+                        <p>How GlobalTech unified their people operations.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/filter.js"></script> <!-- Reusing filter logic, might need adjustment for selector names -->
+
+    <script>
+        // Custom init for resource filtering since reusing filter.js might expect specific classes
+        // Actually filter.js targets .product-card and h3/p.
+        // Let's just override/add the class for simplicity logic in inline script or modify markup
+        // Modified markup: class="card resource-card" -> let's map resource-card to logic.
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const items = document.querySelectorAll('.resource-card');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    const cat = btn.dataset.filter;
+
+                    items.forEach(item => {
+                        if (cat === 'all' || item.dataset.category === cat) {
+                            item.classList.remove('hidden');
+                            item.style.animation = 'none';
+                            item.offsetHeight;
+                            item.style.animation = 'fadeIn 0.5s ease-out forwards';
+                        } else {
+                            item.classList.add('hidden');
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+
+    <style>
+        .filter-btn {
+            background: none;
+            border: none;
+            padding: 8px 16px;
+            cursor: pointer;
+            font-weight: 500;
+            color: var(--text-secondary);
+            transition: all var(--transition-fast);
+            position: relative;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            color: var(--text-primary);
+        }
+
+        .filter-btn.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 2px;
+            background-color: var(--primary-accent);
+            border-radius: 2px;
+        }
+
+        .featured-card {
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            transition: all var(--transition-smooth);
+        }
+
+        @media (min-width: 768px) {
+            .featured-card {
+                flex-direction: row;
+                height: 400px;
+            }
+        }
+
+        .featured-img {
+            background-color: var(--surface);
+            width: 100%;
+            height: 200px;
+            background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        @media (min-width: 768px) {
+            .featured-img {
+                width: 50%;
+                height: 100%;
+            }
+        }
+
+        .featured-content {
+            padding: 32px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        @media (min-width: 768px) {
+            .featured-content {
+                width: 50%;
+                padding: 64px;
+            }
+        }
+
+        .uppercase {
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .mt-5 {
+            margin-top: 48px;
+        }
+
+        .mb-3 {
+            margin-bottom: 16px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Card Images */
+        .card-image {
+            height: 200px;
+            background-color: #eee;
+            margin: -24px -24px 24px -24px;
+            /* Pull to edges of card padding (assuming card pad is 24px) */
+            width: calc(100% + 48px);
+            /* Compensate for margins */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* Assign images to cards via nth-child for simplicity without extra classes */
+        .resource-card:nth-child(1) .card-image {
+            background-image: url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=500&q=80');
+        }
+
+        .resource-card:nth-child(2) .card-image {
+            background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=500&q=80');
+        }
+
+        .resource-card:nth-child(3) .card-image {
+            background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=500&q=80');
+        }
+
+        .resource-card:nth-child(4) .card-image {
+            background-image: url('https://images.unsplash.com/photo-1509017174183-0b7e0278f1ec?auto=format&fit=crop&w=500&q=80');
+        }
+
+        .resource-card:nth-child(5) .card-image {
+            background-image: url('https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=500&q=80');
+        }
+    </style>
+</body>
+
+</html>

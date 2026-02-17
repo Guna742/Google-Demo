@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Auralis Suite</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/typography.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+</head>
+
+<body>
+
+    <div id="header-placeholder"></div>
+
+    <main>
+
+        <!-- Contact Split Layout -->
+        <section class="contact-section">
+            <div class="container grid grid-2">
+
+                <!-- Info Column (Right on desktop, Top on mobile? Usually Left is Form, Right is Info in layouts, but "Form left, Info right" requested) -->
+                <!-- Instruction: "Two column layout: Form left, Info right" -->
+
+                <!-- Form Column -->
+                <div class="contact-form-wrap fade-in">
+                    <h1 class="mb-5">Get in touch</h1>
+                    <form class="contact-form">
+
+                        <div class="input-group fade-in delay-1">
+                            <input type="text" id="name" class="form-input" placeholder=" " required>
+                            <label for="name" class="form-label">Full Name</label>
+                        </div>
+
+                        <div class="input-group fade-in delay-2">
+                            <input type="email" id="email" class="form-input" placeholder=" " required>
+                            <label for="email" class="form-label">Work Email</label>
+                        </div>
+
+                        <div class="input-group fade-in delay-3">
+                            <select id="topic" class="form-input" required>
+                                <option value="" disabled selected></option>
+                                <option value="sales">Sales Inquiry</option>
+                                <option value="support">Product Support</option>
+                                <option value="partnership">Partnerships</option>
+                            </select>
+                            <label for="topic" class="form-label">Topic</label>
+                            <!-- Arrow icon for select -->
+                            <div class="select-arrow"></div>
+                        </div>
+
+                        <div class="input-group fade-in delay-3">
+                            <textarea id="message" class="form-input" rows="5" placeholder=" " required></textarea>
+                            <label for="message" class="form-label">Message</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Info Column -->
+                <div class="contact-info-wrap fade-in delay-1 bg-surface">
+
+                    <div class="info-block mb-5">
+                        <h3>Sales</h3>
+                        <p class="mb-2">Talk to our team about enterprise plans.</p>
+                        <a href="mailto:sales@example.com" class="text-highlight">sales@auralis.com</a>
+                    </div>
+
+                    <div class="info-block mb-5">
+                        <h3>Support</h3>
+                        <p class="mb-2">Get help with your existing products.</p>
+                        <a href="mailto:support@example.com" class="text-highlight">support@auralis.com</a>
+                    </div>
+
+                    <div class="info-block">
+                        <h3>Headquarters</h3>
+                        <p>
+                            100 Innovation Drive<br>
+                            San Francisco, CA 94103<br>
+                            USA
+                        </p>
+                    </div>
+
+                    <div class="map-visual mt-5"></div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/animations.js"></script>
+
+    <style>
+        .contact-section {
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
+
+        .grid-2 {
+            grid-template-columns: 1fr;
+            gap: 64px;
+        }
+
+        @media (min-width: 1024px) {
+            .grid-2 {
+                grid-template-columns: 1.5fr 1fr;
+            }
+        }
+
+        .contact-info-wrap {
+            padding: 48px;
+            border-radius: var(--border-radius);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .map-visual {
+            width: 100%;
+            height: 200px;
+            background-color: #f1f3f4;
+            border-radius: 8px;
+            background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+
+
+        /* Select Arrow Customization */
+        select.form-input {
+            appearance: none;
+            -webkit-appearance: none;
+        }
+
+        .select-arrow {
+            position: absolute;
+            right: 16px;
+            top: 20px;
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 5px solid var(--text-secondary);
+            pointer-events: none;
+        }
+
+        /* Floating Label Overrides to handle Select quirks if needed, typically css in component.css handles Input:focus + label. 
+           For Select with placeholder=" ", it works similar to input:placeholder-shown
+        */
+
+        .mb-2 {
+            margin-bottom: 8px;
+        }
+
+        .mb-5 {
+            margin-bottom: 32px;
+        }
+
+        .mt-5 {
+            margin-top: 48px;
+        }
+    </style>
+</body>
+
+</html>

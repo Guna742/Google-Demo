@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security & Trust - Auralis Suite</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/typography.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+</head>
+
+<body>
+
+    <div id="header-placeholder"></div>
+
+    <main>
+        <!-- Hero -->
+        <section class="text-center">
+            <div class="container fade-in">
+                <div class="badge mb-4">Trust Center</div>
+                <h1 class="hero-headline">Security is our foundation.</h1>
+                <p class="hero-subtext">
+                    We protect your data with enterprise-grade encryption and rigorous compliance standards.
+                </p>
+
+                <!-- Status Bar -->
+                <div class="status-bar flex items-center justify-center gap-sm mt-5">
+                    <span class="status-dot online"></span>
+                    <span class="text-small">All Systems Operational</span>
+                    <a href="#" class="text-small text-highlight ml-4">View Status Page &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Compliance Badges -->
+        <section class="compliance-section">
+            <div class="container">
+                <div class="grid grid-3">
+
+                    <div class="card security-card fade-in delay-1">
+                        <div class="icon-box text-highlight">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                        </div>
+                        <h3>SOC 2 Type II</h3>
+                        <p>We are audited annually to ensure our security controls meet the highest standards.</p>
+                        <a href="#" class="btn btn-link">View Report</a>
+                    </div>
+
+                    <div class="card security-card fade-in delay-2">
+                        <div class="icon-box text-highlight">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                        </div>
+                        <h3>GDPR Compliant</h3>
+                        <p>We respect your privacy and give you full control over your data stored in the EU.</p>
+                        <a href="#" class="btn btn-link">Read Policy</a>
+                    </div>
+
+                    <div class="card security-card fade-in delay-3">
+                        <div class="icon-box text-highlight">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <polyline points="10 9 9 9 8 9"></polyline>
+                            </svg>
+                        </div>
+                        <h3>ISO 27001</h3>
+                        <p>Certified for information security management systems best practices.</p>
+                        <a href="#" class="btn btn-link">View Certificate</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Details -->
+        <section class="tech-details bg-surface">
+            <div class="container grid grid-2">
+                <div class="detail-content fade-in">
+                    <h2>Data Encryption</h2>
+                    <p>Your data is encrypted at rest using AES-256 and in transit using TLS 1.3. We use dedicated keys
+                        for each customer in our Enterprise plan.</p>
+
+                    <h3 class="mt-5 mb-3">Infrastructure Security</h3>
+                    <ul class="check-list">
+                        <li>DDoS Protection</li>
+                        <li>Web Application Firewall (WAF)</li>
+                        <li>Intrusion Detection Systems</li>
+                        <li>Regular Penetration Testing</li>
+                    </ul>
+                </div>
+                <!-- Visual placeholder for encryption graphic -->
+                <div class="visual-wrap fade-in">
+                    <div class="security-visual">
+                        <div class="lock-icon">🔒</div>
+                        <div class="data-stream"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/animations.js"></script>
+
+    <style>
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            background-color: var(--green-accent);
+            border-radius: 50%;
+            box-shadow: 0 0 0 4px rgba(52, 168, 83, 0.2);
+        }
+
+        .security-card {
+            text-align: left;
+        }
+
+        .icon-box {
+            font-size: 2rem;
+            margin-bottom: 16px;
+        }
+
+        .check-list {
+            list-style: none;
+        }
+
+        .check-list li {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 8px;
+        }
+
+        .check-list li::before {
+            content: '✓';
+            color: var(--green-accent);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .bg-surface {
+            background-color: var(--surface);
+        }
+
+        .grid-2 {
+            grid-template-columns: 1fr;
+            gap: 64px;
+        }
+
+        @media (min-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
+            }
+        }
+
+        .security-visual {
+            width: 100%;
+            height: 300px;
+            background: white;
+            border-radius: var(--border-radius);
+            border: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .lock-icon {
+            font-size: 4rem;
+            z-index: 2;
+        }
+
+        .data-stream {
+            position: absolute;
+            width: 200%;
+            height: 100%;
+            background: repeating-linear-gradient(45deg,
+                    transparent,
+                    transparent 10px,
+                    rgba(66, 133, 244, 0.05) 10px,
+                    rgba(66, 133, 244, 0.05) 20px);
+            animation: flow 20s linear infinite;
+        }
+
+        @keyframes flow {
+            from {
+                transform: translateX(-50%);
+            }
+
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        .ml-4 {
+            margin-left: 16px;
+        }
+
+        .mt-5 {
+            margin-top: 48px;
+        }
+    </style>
+</body>
+
+</html>

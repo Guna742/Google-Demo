@@ -1,0 +1,129 @@
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo-text mb-4">
+                    <div class="logo-symbol"></div>
+                    Auralis Suite
+                </a>
+                <p class="text-small mb-4">
+                    Software designed with clarity. Elevating your business operations through a unified, modular
+                    ecosystem.
+                </p>
+                <div class="social-links flex gap-sm">
+                    <a href="#" class="social-icon" aria-label="Twitter">
+                        <div style="width:24px;height:24px;background:#ddd;border-radius:4px;"></div>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn">
+                        <div style="width:24px;height:24px;background:#ddd;border-radius:4px;"></div>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="GitHub">
+                        <div style="width:24px;height:24px;background:#ddd;border-radius:4px;"></div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">Products</h4>
+                <ul class="footer-links">
+                    <li><a href="products.html" class="footer-link">All Products</a></li>
+                    <li><a href="product-detail.html" class="footer-link">Analytics</a></li>
+                    <li><a href="product-detail.html" class="footer-link">Finance</a></li>
+                    <li><a href="product-detail.html" class="footer-link">HR & People</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">Company</h4>
+                <ul class="footer-links">
+                    <li><a href="about.html" class="footer-link">About Us</a></li>
+                    <li><a href="careers.html" class="footer-link">Careers</a></li>
+                    <li><a href="contact.html" class="footer-link">Contact</a></li>
+                    <li><a href="security.html" class="footer-link">Security</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">Resources</h4>
+                <ul class="footer-links">
+                    <li><a href="resources.html" class="footer-link">Blog</a></li>
+                    <li><a href="resources.html" class="footer-link">Case Studies</a></li>
+                    <li><a href="resources.html" class="footer-link">Help Center</a></li>
+                    <li><a href="resources.html" class="footer-link">API Docs</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom flex justify-between items-center">
+            <div class="copyright text-small">
+                &copy; 2026 Auralis Suite Inc. All rights reserved.
+            </div>
+            <div class="legal-links flex gap-md">
+                <a href="#" class="text-small footer-link">Privacy</a>
+                <a href="#" class="text-small footer-link">Terms</a>
+                <a href="#" class="text-small footer-link">Cookies</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<style>
+    .site-footer {
+        background-color: var(--surface);
+        padding: var(--spacing-xl) 0 var(--spacing-lg);
+        border-top: 1px solid var(--border-color);
+        margin-top: var(--spacing-xxl);
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+        margin-bottom: var(--spacing-xl);
+    }
+
+    @media (min-width: 768px) {
+        .footer-grid {
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+        }
+    }
+
+    .footer-heading {
+        font-size: 0.875rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: var(--text-secondary);
+        margin-bottom: var(--spacing-sm);
+    }
+
+    .footer-links {
+        list-style: none;
+    }
+
+    .footer-link {
+        display: block;
+        color: var(--text-primary);
+        margin-bottom: var(--spacing-xs);
+        transition: color var(--transition-fast);
+    }
+
+    .footer-link:hover {
+        color: var(--primary-accent);
+    }
+
+    .footer-bottom {
+        padding-top: var(--spacing-md);
+        border-top: 1px solid var(--border-color);
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+
+    @media (min-width: 768px) {
+        .footer-bottom {
+            flex-direction: row;
+        }
+    }
+
+    .mb-4 {
+        margin-bottom: 16px;
+    }
+</style>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Auralis Suite</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/typography.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+</head>
+
+<body>
+
+    <div id="header-placeholder"></div>
+
+    <main>
+        <!-- Page Header -->
+        <section class="products-header text-center">
+            <div class="container fade-in">
+                <h1 class="hero-headline">The Full Suite</h1>
+                <p class="mb-5" style="max-width: 600px; margin: 0 auto 3rem;">
+                    Everything your business needs to operate with clarity.
+                    Explore our ecosystem of connected tools.
+                </p>
+
+                <!-- Search -->
+                <div class="search-container mb-5">
+                    <input type="text" id="product-search" class="form-input search-input"
+                        placeholder="Search for tools, features, or keywords..." aria-label="Search products">
+                </div>
+
+                <!-- Filter Bar -->
+                <div class="filter-bar flex justify-center gap-sm flex-wrap">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="productivity">Productivity</button>
+                    <button class="filter-btn" data-filter="sales">Sales</button>
+                    <button class="filter-btn" data-filter="finance">Finance</button>
+                    <button class="filter-btn" data-filter="hr">HR</button>
+                    <button class="filter-btn" data-filter="analytics">Analytics</button>
+                    <button class="filter-btn" data-filter="infrastructure">Infrastructure</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Grid -->
+        <section class="product-grid-section">
+            <div class="container">
+                <div class="grid grid-3" id="product-list">
+
+                    <!-- Productivity -->
+                    <a href="product-detail.html" class="card product-card fade-in" data-category="productivity">
+                        <div class="product-thumb"
+                            style="background-image: url('https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=100&q=80')">
+                        </div>
+                        <div class="card-headers mb-3 flex items-center gap-sm">
+                            <span class="badge">Productivity</span>
+                        </div>
+                        <h3>Docs & Notes</h3>
+                        <p>Collaborative documentation that keeps everyone on the same page.</p>
+                    </a>
+
+                    <a href="product-detail.html" class="card product-card fade-in" data-category="productivity">
+                        <div class="product-thumb"
+                            style="background-image: url('https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=100&q=80')">
+                        </div>
+                        <div class="card-headers mb-3 flex items-center gap-sm">
+                            <span class="badge">Productivity</span>
+                        </div>
+                        <h3>Tasks</h3>
+                        <p>Project management stripped of complexity.</p>
+                    </a>
+
+                    <!-- Sales -->
+                    <a href="product-detail.html" class="card product-card fade-in" data-category="sales">
+                        <div class="product-thumb"
+                            style="background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=100&q=80')">
+                        </div>
+                        <div class="card-headers mb-3 flex items-center gap-sm">
+                            <span class="badge">Sales</span>
+                        </div>
+                        <h3>CRM</h3>
+                        <p>Manage relationships, not just data entries.</p>
+                    </a>
+
+                    <!-- Finance -->
+                    <a href="product-detail.html" class="card product-card fade-in" data-category="finance">
+                        <div class="product-thumb"
+                            style="background-image: url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=100&q=80')">
+                        </div>
+                        <div class="card-headers mb-3 flex items-center gap-sm">
+                            <span class="badge">Finance</span>
+                        </div>
+                        <h3>Books</h3>
+                        <p>Automated accounting for the modern web.</p>
+                    </a>
+
+                    <a href="product-detail.html" class="card product-card fade-in" data-category="finance">
+                        <div class="product-thumb"
+                            style="background-image: url('https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=100&q=80')">
+                        </div>
+                        <div class="card-headers mb-3 flex items-center gap-sm">
+                            <span class="badge">Finance</span>
+                        </div>
+                        <h3>Expenses</h3>
+                        <p>Scan receipts and reimburse instantly.</p>
+                    </a>
+
+                    <!-- HR -->
+                    <a href="product-detail.html" class="card product-card fade-in" data-category="hr">
+                        <div class="product-thumb"
+                            style="background-image: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=100&q=80')">
+                        </div>
+                        <div class="card-headers mb-3 flex items-center gap-sm">
+                            <span class="badge">HR</span>
+                        </div>
+                        <h3>People</h3>
+                        <p>Onboarding, payload, and benefits in one place.</p>
+                    </a>
+
+                    <!-- Analytics -->
+                    <a href="product-detail.html" class="card product-card fade-in" data-category="analytics">
+                        <div class="product-thumb"
+                            style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=100&q=80')">
+                        </div>
+                        <div class="card-headers mb-3 flex items-center gap-sm">
+                            <span class="badge">Analytics</span>
+                        </div>
+                        <h3>Insights</h3>
+                        <p>Business intelligence that tells a story.</p>
+                    </a>
+
+                    <!-- Infrastructure -->
+                    <a href="product-detail.html" class="card product-card fade-in" data-category="infrastructure">
+                        <div class="product-thumb"
+                            style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=100&q=80')">
+                        </div>
+                        <div class="card-headers mb-3 flex items-center gap-sm">
+                            <span class="badge">Infrastructure</span>
+                        </div>
+                        <h3>Cloud</h3>
+                        <p>Serverless computing for your applications.</p>
+                    </a>
+
+                    <a href="product-detail.html" class="card product-card fade-in" data-category="infrastructure">
+                        <div class="product-thumb"
+                            style="background-image: url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=100&q=80')">
+                        </div>
+                        <div class="card-headers mb-3 flex items-center gap-sm">
+                            <span class="badge">Infrastructure</span>
+                        </div>
+                        <h3>Identity</h3>
+                        <p>Secure authentication and user management.</p>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/filter.js"></script>
+
+    <style>
+        .search-container {
+            max-width: 600px;
+            margin: 0 auto 40px;
+        }
+
+        .search-input {
+            padding: 18px 24px;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            /* Pill shape */
+        }
+
+        .filter-btn {
+            background: none;
+            border: none;
+            padding: 8px 16px;
+            cursor: pointer;
+            font-weight: 500;
+            color: var(--text-secondary);
+            transition: all var(--transition-fast);
+            position: relative;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            color: var(--text-primary);
+        }
+
+        .filter-btn.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 2px;
+            background-color: var(--primary-accent);
+            border-radius: 2px;
+        }
+
+        .product-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            min-height: 240px;
+            position: relative;
+            overflow: hidden;
+            padding: 24px;
+            text-decoration: none;
+            color: white;
+        }
+
+        /* Thumb becomes full background */
+        .product-thumb {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            z-index: 0;
+            border-radius: 0;
+            transition: transform 0.5s ease;
+        }
+
+        .product-card:hover .product-thumb {
+            transform: scale(1.05);
+        }
+
+        /* Overlay */
+        .product-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2));
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .card-headers,
+        .product-card h3,
+        .product-card p {
+            position: relative;
+            z-index: 2;
+        }
+
+        .product-card p {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .card-headers {
+            position: absolute;
+            top: 24px;
+            left: 24px;
+            width: auto;
+        }
+
+        .badge {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 4px 8px;
+            backdrop-filter: blur(4px);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .mb-3 {
+            margin-bottom: 12px;
+        }
+
+        .mb-5 {
+            margin-bottom: 32px;
+        }
+    </style>
+</body>
+
+</html>
