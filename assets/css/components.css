@@ -1,0 +1,148 @@
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 32px;
+    font-weight: 500;
+    border-radius: var(--border-radius-pill);
+    transition: all var(--transition-fast);
+    cursor: pointer;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    letter-spacing: 0.01em;
+}
+
+.btn-primary {
+    background-color: var(--primary-accent);
+    color: white;
+    box-shadow: 0 4px 12px rgba(66, 133, 244, 0.2);
+}
+
+.btn-primary:hover {
+    background-color: #3367D6;
+    /* Darker blue */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(66, 133, 244, 0.3);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--surface-hover);
+    border-color: var(--text-secondary);
+}
+
+.btn-link {
+    background: none;
+    border: none;
+    padding: 0;
+    color: var(--primary-accent);
+    font-weight: 600;
+}
+
+.btn-link:hover {
+    text-decoration: underline;
+}
+
+/* Cards */
+.card {
+    background-color: var(--background);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-md);
+    transition: all var(--transition-smooth);
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    border-color: var(--primary-accent);
+    /* No drop shadows, as per request 'only 1px borders' mostly */
+    /* Adding slight shadow only on hover for lift effect if strictly necessary, but sticking to guidelines of minimal */
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    background-color: var(--surface);
+    border-radius: 6px;
+    margin-bottom: var(--spacing-sm);
+    object-fit: cover;
+}
+
+/* Grid System Components */
+.grid-3 {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+}
+
+@media (min-width: 768px) {
+    .grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Inputs */
+.input-group {
+    position: relative;
+    margin-bottom: var(--spacing-md);
+}
+
+.form-input {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: var(--surface);
+    font-size: 1rem;
+    transition: all var(--transition-fast);
+    outline: none;
+}
+
+.form-input:focus {
+    border-color: var(--primary-accent);
+    background-color: var(--background);
+    box-shadow: 0 0 0 4px rgba(66, 133, 244, 0.1);
+}
+
+.form-label {
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    color: var(--text-secondary);
+    pointer-events: none;
+    transition: all var(--transition-fast);
+    transform-origin: left top;
+}
+
+.form-input:focus+.form-label,
+.form-input:not(:placeholder-shown)+.form-label {
+    transform: translateY(-28px) scale(0.85);
+    color: var(--primary-accent);
+    font-weight: 500;
+}
+
+/* Badges */
+.badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 12px;
+    background-color: var(--surface);
+    border: 1px solid var(--border-color);
+    border-radius: 100px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--text-primary);
+}
